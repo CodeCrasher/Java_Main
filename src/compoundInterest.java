@@ -11,9 +11,9 @@ public class compoundInterest {
         principal = scn.nextDouble();
         System.out.println("Enter the rate for the Compound Interest:");
         rate = scn.nextDouble();
-        for (int i = 0; i <= year; i++) {
-            amount = principal * Math.pow(1 + rate, year);
-            System.out.printf("The compound interest is %.2f for %d year.\n", amount, year);
+        for (int i = 1; i <= year; i++) {
+            amount = principal * Math.pow(1 + rate, i);
+            System.out.printf("The compound interest is %.2f for %d year.\n", amount, i);
         }
 
     }
