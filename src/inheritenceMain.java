@@ -3,7 +3,7 @@ public class inheritenceMain {
         inheritenceTute1 i1 = new inheritenceTute1();
         inheritenceTute2 i2 = new inheritenceTute2();
         i1.eat();
-        i1.drink();
+        i2.eat();
         i2.drink();
     }
 }
