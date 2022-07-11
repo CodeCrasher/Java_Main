@@ -25,6 +25,12 @@ public class eventHandler extends JFrame {
         add(item3);
         passField = new JPasswordField("myPass");
         add(passField);
+
+        thehandler handler = new thehandler();
+        item1.addActionListener(handler);
+        item2.addActionListener(handler);
+        item3.addActionListener(handler);
+        passField.addActionListener(handler);
     }
 
 }
