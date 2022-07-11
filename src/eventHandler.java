@@ -34,7 +34,8 @@ public class eventHandler extends JFrame {
     }
 
     private class thehandler implements ActionListener {
-        public void actionPerfomed(ActionEvent event) {
+        @Override
+        public void actionPerformed(ActionEvent event) {
             String s = "";
             if (event.getSource() == item1) {
                 s = String.format("The field 1 is %s", event.getActionCommand());
@@ -45,6 +46,7 @@ public class eventHandler extends JFrame {
             } else if (event.getSource() == passField) {
                 s = String.format("The password is %s", event.getActionCommand());
             }
+            JOptionPane.showMessageDialog(null, s);
         }
     }
 
