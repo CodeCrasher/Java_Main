@@ -9,5 +9,24 @@ import javax.swing.ImageIcon;
 
 
 public class guiJb extends JFrame{
+    private JButton reg;
+    private JButton custom;
+
+    public guiJb(){
+        super("The title");
+        setLayout(new FlowLayout());
+
+        reg = new JButton("Regular Button");
+        add(reg);
+
+        Icon b = new ImageIcon(getClass().getResource("b.png"));
+        Icon x = new ImageIcon(getClass().getResource("x.png"));
+
+        custom = new JButton("Custom",b);
+        custom.setRolloverIcon(x);
+        add(custom);
+
+    }
+
 
 }
